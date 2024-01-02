@@ -1,0 +1,18 @@
+/* Error: expected ")".
+ *     ,
+ * 800 |                 background: url(../<?php echo get_template_directory_uri(); ?>/assets/img/elements/primary-check.png) no-repeat center center/cover;
+ *     |                                 ^
+ *     '
+ *   wp-content/themes/pillowtheme/assets/sass/_elements.scss 800:33  @import
+ *   wp-content/themes/pillowtheme/assets/sass/style.scss 34:9        root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ")".\a     \2577 \a 800 \2502                  background: url(../<?php echo get_template_directory_uri(); ?>/assets/img/elements/primary-check.png) no-repeat center center/cover;\a     \2502                                  ^\a     \2575 \a   wp-content/themes/pillowtheme/assets/sass/_elements.scss 800:33  @import\a   wp-content/themes/pillowtheme/assets/sass/style.scss 34:9        root stylesheet';
+}
